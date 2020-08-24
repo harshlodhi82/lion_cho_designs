@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="flex flex-wrap w-screen h-screen justify-center relative">
+        <div class="w-full flex flex-row flex-wrap"  style="max-width: 635px;">
+            <p class="italic text-3xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit praesentium, maiores neque, quisquam nisi tenetur distinctio recusandae modi perferendis accusantium cupiditate aliquid cumque aut omnis repellat, commodi esse porro quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi itaque quae reprehenderit harum.</p>
+            <img id="yt_thumbnail" class="self-end w-full cursor-pointer" alt="" >
+            
+        </div>
+        <iframe id="yt_video_popup" class="absolute w-full h-1/2 hidden z-40" height="500" style="max-width: 635px;top:50%; transform: translateY(-50%);"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <div id="yt_video_popup_bg" class="absolute w-screen h-screen top-0 right-0 z-20 hidden" style="background-color: rgba(0, 0, 0, 0.3);"></div>
+    </div>
+
+
+    <script src="./index.js"></script>
+    
+</body>
+</html>
