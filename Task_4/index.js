@@ -6,6 +6,7 @@ let isPopUpShowing = false;
 
 const popUpHandeler = ()=>{
     isPopUpShowing = !isPopUpShowing;
+    console.log("run>>");
     if(isPopUpShowing){
         popUpBgElement.classList.remove("hidden");
         popUpElement.classList.remove("hidden");
@@ -20,3 +21,4 @@ const popUpHandeler = ()=>{
 //** Events */
 button.addEventListener('click', popUpHandeler);
 cancelBtn.addEventListener('click', popUpHandeler);
+popUpBgElement.addEventListener('click', popUpHandeler);
